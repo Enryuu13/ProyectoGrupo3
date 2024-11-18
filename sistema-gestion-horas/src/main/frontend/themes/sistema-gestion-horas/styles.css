@@ -1,0 +1,18 @@
+@import url('./main-layout.css');
+@import url('./views/empleados-view.css');
+@import url('./views/horas-trabajadas-view.css');
+@import url('./views/consultade-pagos-view.css');
+@import url('@fontsource/arimo/index.css');    html {
+      --lumo-success-color: hsla(145, 65%, 63%, 0.79);
+      --lumo-success-color-50pct: hsla(145, 65%, 63%, 0.5);
+      --lumo-success-color-10pct: hsla(145, 65%, 63%, 0.1);
+      --lumo-primary-color: hsl(107, 57%, 54%);
+      --lumo-primary-color-50pct: hsla(107, 57%, 54%, 0.5);
+      --lumo-primary-color-10pct: hsla(107, 57%, 54%, 0.1);
+      --lumo-primary-text-color: hsl(224, 90%, 52%);
+      --lumo-border-radius-s: calc(var(--lumo-size-m) / 6);
+      --lumo-border-radius-m: calc(var(--lumo-size-m) / 2);
+      --lumo-border-radius-l: var(--lumo-size-m);
+--lumo-font-family: Arimo;
+
+    }
