@@ -1,5 +1,7 @@
 package grupo3programacionavanzada.data;
 
+import java.util.List;
+
 public class EmpleadosResponse {
 	private List<Empleado> items ;
 	private int count;
