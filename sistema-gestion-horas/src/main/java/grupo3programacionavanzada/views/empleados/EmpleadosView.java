@@ -23,6 +23,8 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
 import grupo3programacionavanzada.data.Empleado;
+
+import java.util.List;
 import java.util.Optional;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.orm.ObjectOptimisticLockingFailureException;
@@ -31,7 +33,7 @@ import org.springframework.orm.ObjectOptimisticLockingFailureException;
 @Route("/:empleadoID?/:action?(edit)")
 @Menu(order = 0, icon = "line-awesome/svg/columns-solid.svg")
 @RouteAlias("")
-public class EmpleadosView extends Div implements BeforeEnterObserver {
+public class EmpleadosView extends Div implements BeforeEnterObserver, EmpleadosViewModel {
 
     private final String EMPLEADO_ID = "empleadoID";
     private final String EMPLEADO_EDIT_ROUTE_TEMPLATE = "/%s/edit";
@@ -189,4 +191,22 @@ public class EmpleadosView extends Div implements BeforeEnterObserver {
         binder.readBean(this.empleado);
 
     }
+
+	@Override
+	public void mostrarEmpleadosEnGrid(List<Empleado> items) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mostrarMensajeError(String mensaje) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mostrarMensajeExito(String mensaje) {
+		// TODO Auto-generated method stub
+		
+	}
 }
